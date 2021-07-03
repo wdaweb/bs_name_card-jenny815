@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 1. link bootstrap.css -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <style>
+    body,
+    html {
+      height: 100%;
+      /* background: black; */
+      position: relative;
+
+    }
+
+    .container {
+      width: 60%;
+      height: 60%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .ls {
+      letter-spacing: 5px;
+    }
+
+    @media (max-width: 575px) {
+      .container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+      }
+
+      .col1 {
+        height: 30%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container border">
+    <div class="row d-flex flex-column flex-sm-row  h-100">
+      <div class="col1 col-sm-4 bg-dark d-flex justify-content-center align-content-center">
+        <div class="d-flex align-items-center justify-content-center">
+          <img src="./coffee.png" class="h-75">
+        </div>
+      </div>
+      <div class="col col-sm-8 d-flex justify-content-center align-items-center">
+        <div class="row w-75 h-75 d-flex flex-column ">
+          <div class="col pt-sm-5 pb-sm-5">
+            <h5 class="mb-0">Barista</h5>
+            <h1 class="mb-0">Henry</h1>
+            <h4 class="ls">陽光咖啡館</h4>
+          </div>
+          <div class="col">
+            <h5>住址:陽光海灘300號</h5>
+            <h5>電話:8888888888</h5>
+            <h5>E-mail:sunny@example.cc/</h5>
+            <h5>網站:https://www.haha.example.cc/</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 順序要對，要先有 jQuery，再有 popper.js、bootstrap.js  -->
+  <!-- 3. src jquery -->
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <!-- 2. src  bootstrap.bundle.min.js 包含 bootstrap.js、popper.js-->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
